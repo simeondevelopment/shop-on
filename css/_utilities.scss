@@ -1,0 +1,79 @@
+$bg-color: #FBFAF9;
+$text-color1: rgba(0, 0, 0, 0.8);
+$text-color2: #1d1d1f;
+$text-color3: rgba(29, 29, 31, 0.8);
+$text-color4: rgba(29, 29, 31, 0.6);
+$text-light: #fff;
+$secondary-color: #F6EEEE;
+$box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
+$products-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+body {
+  background-color: $bg-color;
+  color: $text-color1;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: $text-color1;
+}
+
+li {
+  list-style: none;
+}
+
+#container {
+  padding: 0 2.5%;
+  width: 100%;
+}
+
+#btn {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  border: none;
+  background: none;
+  letter-spacing: -0.035vw;
+  line-height: 1.2;
+  cursor: pointer;
+  padding: 0.2rem 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // color: #fff;
+  color: $text-color4;
+  color: $text-color1;
+  position: relative;
+  transition: all 0.1s ease-out;
+}
+
+#btn::before {
+  content: '';
+  position: absolute;
+  background: currentColor;
+  /* background: #fff; */
+  width: 60%;
+  height: 0.01rem;
+  bottom: 0;
+  transform-origin: 50% 0%;
+  transform: scale3d(0, 1, 1);
+  opacity: 0;
+  transition: all 0.25s ease-out;
+  transition-property: opacity, transform;
+}
+
+#btn:hover::before {
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+}

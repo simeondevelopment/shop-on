@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <title>SHOP ON | Home</title>
+</head>
+
+<body>
+
+  <div id="container">
+
+    <!-- Navbar -->
+    <div id="navbar">
+      <img class="logo" src="assets/logo.png" alt="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="post.html" class="current">Sell on SHOP ON</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="user.html" class="user-profile"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M19 7.001C19 10.866 15.866 14.001 12 14.001C8.134 14.001 5 10.866 5 7.001C5 3.134 8.134 0 12 0C15.866 0 19 3.134 19 7.001ZM17.402 14.181C15.896 15.318 14.028 16.001 12 16.001C9.97 16.001 8.101 15.316 6.593 14.179C2.521 15.972 0 21.555 0 24H24C24 21.577 21.4 15.994 17.402 14.181Z"
+                  fill="black" fill-opacity="0.8" />
+              </svg></a></li>
+        </ul>
+      </nav>
+    </div>
+
+
+    <style>
+      #form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        /* justify-content: spae; */
+      }
+
+      #file {
+        cursor: pointer;
+      }
+    </style>
+
+    <div class="showcase">
+
+    </div>
+    <form id="form">
+
+      <input name="title" type="text" maxlength="50" placeholder="Product name" required>
+      <input name="description" type="text" maxlength="150" placeholder="Description" required>
+      <input name="name" type="text" maxlength="30" placeholder="Your name" required>
+      <input type="number" id="phone" name="contact" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        placeholder="Your phone number" required>
+
+      <div class="priceandloc">
+        <select name="location" id="location-post" required>
+          <option value="Skopje" selected>Skopje</option>
+          <option value="Ohrid">Ohrid</option>
+          <option value="Veles">Veles</option>
+          <option value="Gostivar">Gostivar</option>
+          <option value="Tetovo">Tetovo</option>
+          <option value="Delcevo">Delcevo</option>
+          <option value="Debar">Debar</option>
+          <option value="Stip">Stip</option>
+          <option value="Strumica">Strumica</option>
+          <option value="Gevgelija">Gevgelija</option>
+        </select>
+
+        <input name="price" min="1" max="1000000" type="number" id="price-post" placeholder="Price in $" required>
+        <input type="file" name="image" id="file" accept=".jpg, .png" multiple required>
+
+      </div>
+
+      <button id="btn" type="submit">Submit</button>
+
+    </form>
+
+  </div>
+
+
+  <script src="js/post.js"></script>
+  <!-- <script src="js/app.js"></script> -->
+</body>
+
+</html>

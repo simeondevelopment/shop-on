@@ -1,0 +1,230 @@
+@import '_utilities.scss';
+
+
+// Navbar
+#navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  margin-bottom: 55px;
+}
+
+
+.logo {
+  width: 250px;
+  position: absolute;
+}
+
+nav {
+  width: 100%;
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1.5rem;
+
+    a {
+      font-size: 14px;
+      font-weight: 500;
+      color: $text-color1;
+    }
+  }
+
+  .user-profile {
+    margin-left: 2rem;
+  }
+}
+
+
+// Filter Container
+#filter-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#categories {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 26px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: $text-color1;
+  width: 68px;
+  height: 64px;
+  border-radius: 50px;
+  background: $secondary-color;
+  box-shadow: $box-shadow;
+  border: none;
+  appearance: none;
+}
+
+input {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  border-radius: 50px;
+  box-shadow: $box-shadow;
+  width: 50vw;
+  max-width: 654px;
+  height: 64px;
+  background: $secondary-color;
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 2rem;
+}
+
+
+.location {
+  width: 68px;
+  height: 64px;
+  background: $secondary-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  box-shadow: $box-shadow;
+
+}
+
+
+
+// Main section - Products
+.latest-h {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.28em;
+  color: rgba(29, 29, 31, 0.4);
+  text-transform: uppercase;
+  padding: 0rem 1rem;
+  margin-top: 0.5rem;
+}
+
+#products {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(23.3%, 1fr));
+  gap: 2rem;
+  margin: 1rem 0rem;
+}
+
+.product {
+  width: 100%;
+  margin: 0 auto;
+
+  .bg {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: $products-shadow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    // padding: 1rem;
+    width: 320px;
+    height: 280px;
+    margin-bottom: 1.5rem;
+
+    img {
+      width: 250px;
+      height: 250px;
+    }
+  }
+
+  .product-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    color: $text-color3;
+    margin: 0.5rem 1rem;
+  }
+
+  .location-small {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 1rem;
+
+    .product-location {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 26px;
+      color: $text-color4;
+    }
+
+  }
+
+  .price {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 1rem;
+
+    .product-price {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 26px;
+      color: $text-color4;
+    }
+  }
+}
+
+
+.current {
+  border-bottom: 1px solid $text-color1;
+}
+
+
+
+// Post page
+.priceandloc {
+  // width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+#location-post {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  border-radius: 50px;
+  box-shadow: $box-shadow;
+  // width: 50vw;
+  // max-width: 654px;
+  // height: 64px;
+  background: $secondary-color;
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 1.2rem;
+  width: 33.3%;
+
+}
+
+#price-post {
+  // padding: 2rem;
+  width: 33.3%;
+}
+
+#file {
+  width: 33.3%;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // cursor: pointer;
+  // padding: 2rem;
+}

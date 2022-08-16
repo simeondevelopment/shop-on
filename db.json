@@ -1,0 +1,86 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "image": "assets/apple_iphone_13_pro_max_128gb_oro_01_l 1.png",
+      "title": "Apple Iphone 13 Pro Max 128GB",
+      "location": "Skopje",
+      "price": "1.040,50",
+      "category": "Phones",
+      "additional-info": {
+        "name": "Sebastian",
+        "contact": "071334124",
+        "description": "prodavam telefon nov kupen pred dva meseci ne koristen"
+      }
+    },
+    {
+      "id": "2",
+      "image": "assets/realme_buds_air_2_auriculares_bluetooth_02_blanco_ad_l 1.png",
+      "title": "Realme Buds Air 2",
+      "location": "Veles",
+      "price": "33,05",
+      "category": "Earphones",
+      "additional-info": {
+        "name": "Petar",
+        "contact": "078537124",
+        "description": "Користени скоро 5 месеци, како нови"
+      }
+    },
+    {
+      "id": "3",
+      "image": "assets/huawei_honor_watch_es_02_rosa_ad_l 1.png",
+      "title": "Huawei Honor Watch ES- Smartwatch",
+      "location": "Kicevo",
+      "price": "47,93",
+      "category": "Watches",
+      "additional-info": {
+        "name": "Darko",
+        "contact": "072364124",
+        "description": "Huawei au bau"
+      }
+    },
+    {
+      "id": "4",
+      "image": "assets/sonos_move_blanco_altavoz_inteligente_portatil_06_ad_l 1.png",
+      "title": "Sonos Move Wifi White",
+      "location": "Ohrid",
+      "price": "309,92",
+      "category": "Speakers",
+      "additional-info": {
+        "name": "Goran",
+        "contact": "070318273",
+        "description": "Sonos "
+      }
+    },
+    {
+      "id": "5",
+      "image": "assets/amazfit_gts_2.jpg",
+      "title": "Amazfit GTS 2",
+      "location": "Delcevo",
+      "price": "50,02",
+      "category": "Watches",
+      "additional-info": {
+        "name": "Dalibor",
+        "contact": "072345273",
+        "description": "Best watch in town"
+      }
+    },
+    {
+      "title": "Nothing Phone 1",
+      "location": "Delcevo",
+      "price": "800",
+      "image": "assets/nothing_phone_1_negro_01_l.jpg",
+      "id": "n3Opdsp"
+    },
+    {
+      "title": "Xiaomi Watch",
+      "description": "This is the new watch I wanted to sell, the location is a the bridge in the center of Skopje feel free to call me anytime to check it.",
+      "name": "Simeon",
+      "contact": "071351202",
+      "location": "Stip",
+      "price": "305",
+      "image": "assets/xiaomi_watch_s1_active_negro_01_l.jpg",
+      "id": "HeDp6gR"
+    }
+  ]
+}
